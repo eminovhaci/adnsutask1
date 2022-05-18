@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    transition: 600ms ease-in-out;
+    overflow-x: hidden;
+}
+.side-bar{
+    width: 320px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -320px;
+    background-color: #222E3C;
+    transition: 600ms ease-in-out;
+    overflow-x: hidden;
+    /* overflow-y: scroll; */
+}
+.active{
+    left: 0;
+}
+.usercard{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+.userinfo{
+    width: 50%;
+    margin: auto;
+}
+.usercard img{
+    width: 75%;
+}
+.userinfo h1,.userinfo a{
+    font-size: 25px;
+    color: rgb(160, 159, 159);
+    line-height: 35px;
+}
+.side-bar .menu{
+    width: 100%;
+    margin-top: 30px;
+}
+.side-bar .menu .item{
+    position: relative;
+    cursor: pointer;
+}
+.side-bar .menu .item .right-btn{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+    transition: 300ms ease;
+}
+.side-bar .menu .item .sub-menu ul li a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    padding: 15px 30px;
+    transition: 300ms ease;
+}
+.side-bar .menu .item .right-btn:hover{
+    background-color: #8621F8;
+    padding-left: 60px;
+}
+.side-bar .menu .item .sub-menu ul li a:hover{
+    background-color: rgb(185, 75, 200);
+}
+.side-bar .menu .item i{
+    margin-right: 15px;
+}
+.fa-angle-right{
+    position: absolute;
+    right: 0;
+    top: 25px;
+}
+.side-bar .menu .item .sub-menu{
+    background-color: rgba(255, 255, 255, 0.216);
+}
+.side-bar .menu .item .sub-menu ul li a{
+    padding-left: 80px;
+}
+.sub-menu{
+    display: none;
+}
+.rotate{
+    transform: rotate(90deg);
+    transition: 300ms;
+}
+nav{
+    width: 100%;
+    background-color: #222E3C;
+    display: flex;
+    padding: 10px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-btn{
+    color: white;
+    font-size: 30px;
+    transition: 600ms ease-in-out;
+}
+.menu-btn i{
+    cursor: pointer;
+}
+.logo img{
+    cursor: pointer;
+}
+.usernavprofile{
+    display: flex;
+    cursor: pointer;
+    position: relative;
+}
+.userprofile i{
+    font-size: 25px;
+    margin-left: 10px;
+}
+.userprofile h1{
+    font-size: 20px;
+}
+.userprofile{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+.usericon{
+    position: absolute;
+    top: 50px;
+    right: -10px;
+    border-radius: 5px;
+    width: 140%;
+    background-color: #2d5d98;
+    color: white;
+    display: none;
+}
+.usericon i{
+    margin-right: 10px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    padding: 18px 20px;
+    border-bottom: 1px solid rgb(177, 177, 177);
+    transition: 400ms;
+}
+.settings{
+    display: flex;
+    align-items: center;
+    padding: 18px 20px;
+    border-bottom: 1px solid rgb(177, 177, 177);
+    transition: 400ms;
+}
+.logout{
+    display: flex;
+    align-items: center;
+    padding: 18px 20px;
+    transition: 400ms;
+}
+.active-body{
+    padding-left: 320px;
+}
+.profile:hover,.settings:hover,.logout:hover{
+    background-color: #062b58;
+    color: rgb(0, 255, 255);
+}
+.side-bar::-webkit-scrollbar{
+    width: 8px;
+}
+.side-bar::-webkit-scrollbar-track{
+    background: #f1f1f1; 
+}
+.side-bar::-webkit-scrollbar-thumb{
+    background: #888; 
+    border-radius: 10px;
+}
+.side-bar::-webkit-scrollbar-thumb:hover{
+    background: #555; 
+}
+main{
+    width: 100%;
+}
+table,th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px 15px;
+    transition: 300ms;
+}
+table{
+    width: 80%;
+    margin: 50px auto;
+}
+.buttons{
+    padding: 10px;
+}
+.buttons i{
+    padding: 12px;
+    font-size: 22px;
+    border-radius: 50%;
+    transition: 600ms;
+    cursor: pointer;
+}
+.fa-pen-to-square{
+    color: rgb(20, 228, 20);
+}
+.fa-trash{
+    color: red;
+}
+.buttons i:hover{
+    background-color: #062b58;
+}
+/* ixtisas */
+.add{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 25px 35%;
+}
+.add a{
+    padding: 8px 18px;
+    cursor: pointer;
+    background-color: #115ebb;
+    font-size: 15px;
+    color: white;
+    transition: 600ms;
+    border: none;
+}
+.add a:hover{
+    background-color: #062b58;
+}
+.add a i{
+    margin-right: 5px;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+/* science */
+.cv{
+    padding: 0px;
+}
+th:hover,td:hover{
+    box-shadow: #40b6cd 0px 0px 15px 2px;
+    background-color: rgb(165, 245, 255);
+}
+.checkbox{
+    padding: 0px;
+}
+.checkbox input{
+    width: 20px;
+    height: 20px;
+}
